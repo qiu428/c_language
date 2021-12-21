@@ -6,10 +6,8 @@ bool isUnique(char *astr)
     int ascii[128] = {0};
     for (int i = 0; i < strlen(astr); i++)
     {
-        if (*(ascii + astr[i]) == 1)
+        if ((++ascii[astr[i]]) >2 )
             return false;
-        else
-            *(ascii + astr[i]) += 1;
     }
     return true;
 }
