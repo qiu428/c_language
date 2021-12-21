@@ -16,18 +16,6 @@
 
 ## 使用说明
 
-### 1、编译运行
-
-~~~json
-/* tasks.json */
-"args": [
-	"-fdiagnostics-color=always",
-	"-g",
-	"${fileDirname}\\*.c",	/* 文件夹多个c一个main */
-	//"${file}",			/* 文件夹多个main */
-	"-o",
-	"${workspaceFolder}\\build\\${fileBasenameNoExtension}.exe"
-~~~
 
 
 
