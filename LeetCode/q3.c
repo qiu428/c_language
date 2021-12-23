@@ -4,7 +4,7 @@ int myAtoi(char *s);
 
 int main()
 {
-    printf("%ld", myAtoi("  -eswqe"));
+    printf("%ld", myAtoi("+42"));
     return 0;
 }
 
@@ -14,8 +14,13 @@ int myAtoi(char *s)
     int PN = 1;
     while (*s == ' ')
         s++;
-    if (*s++ == '-')
+    if (*s == '-')
+    {
         PN = -1;
+        s++;
+    }
+    else if (*s == '+')
+        s++;
     while (*s >= '0' && *s <= '9')
     {
         int num = *s - '0';
