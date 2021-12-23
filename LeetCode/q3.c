@@ -4,7 +4,7 @@ int myAtoi(char *s);
 
 int main()
 {
-    printf("%ld", myAtoi("+42"));
+    printf("%ld", myAtoi("-91283472332"));
     return 0;
 }
 
