@@ -9,7 +9,7 @@ int main(int argc, char const *argv[])
     if (argc != 2)
     {
         printf("Usage:%s filename\n", argv[0]);
-        exit(EXIT_FAILURE);
+        exit(EXIT_FAILURE);/* 程序运行失败退出 */
     }
     if ((fp = fopen(argv[1], "r")) == NULL)
     {
